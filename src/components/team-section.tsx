@@ -29,38 +29,42 @@ const teamMembers = [
 
 export function TeamSection() {
   return (
-    <section id="team" className="py-20 px-4 bg-warm-white" data-animate>
+    <section id="team" className="py-20 px-4 bg-[#FAFAF8]" data-animate>
       <div className="max-w-5xl mx-auto">
         <p className="text-sm font-semibold tracking-widest text-cyan uppercase text-center mb-3">
-          The Team
+          The Humans Behind It
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 text-center mb-4">
           Built by Chicago, for Chicago
         </h2>
+        <p className="text-slate-500 text-center mb-12 max-w-lg mx-auto">
+          We&apos;re a small crew of community lovers who think the best connections happen face to face.
+        </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" data-animate>
           {teamMembers.map((member) => (
             <a
               key={member.name}
               href={member.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-lg transition-shadow"
+              className="group bg-white rounded-2xl p-6 text-center shadow-sm border border-slate-100 hover:shadow-md hover:border-cyan/30 transition-all duration-300"
+              data-stagger
             >
-              <div className="mx-auto mb-4 w-28 h-28 rounded-full overflow-hidden ring-3 ring-gray-100 group-hover:ring-cyan transition-all">
+              <div className="mx-auto mb-4 w-24 h-24 rounded-full overflow-hidden ring-3 ring-slate-100 group-hover:ring-cyan/40 transition-all duration-300">
                 <Image
                   src={member.image}
                   alt={member.name}
-                  width={112}
-                  height={112}
+                  width={96}
+                  height={96}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="font-semibold text-gray-900 mb-1">{member.name}</h3>
-              <p className="text-sm text-gray-900/60 mb-3">{member.role}</p>
+              <h3 className="font-semibold text-slate-900 mb-1">{member.name}</h3>
+              <p className="text-sm text-slate-400 mb-3">{member.role}</p>
               {/* LinkedIn icon */}
               <svg
-                className="mx-auto w-5 h-5 text-gray-900/30 group-hover:text-cyan transition-colors"
+                className="mx-auto w-4 h-4 text-slate-300 group-hover:text-cyan transition-colors duration-300"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >

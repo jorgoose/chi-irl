@@ -7,16 +7,19 @@ const partners = [
 
 export function CommunitySection() {
   return (
-    <section className="bg-gray-900 py-20 px-4" data-animate>
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+    <section className="bg-slate-900 py-20 px-4" data-animate>
+      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
         {/* Left: Community Partners */}
         <div>
           <p className="text-sm font-semibold tracking-widest text-cyan uppercase mb-3">
             Community Partners
           </p>
-          <h3 className="text-2xl font-bold text-white mb-6">
-            Powered by the Community
+          <h3 className="text-2xl font-bold text-white mb-2">
+            Powered by People
           </h3>
+          <p className="text-slate-400 text-sm mb-6">
+            The folks who help make Chicago&apos;s tech community feel like home.
+          </p>
           <ul className="space-y-3">
             {partners.map((partner) => (
               <li key={partner.name}>
@@ -24,11 +27,10 @@ export function CommunitySection() {
                   href={partner.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-white/80 hover:text-cyan transition-colors"
+                  className="inline-flex items-center gap-2.5 text-slate-300 hover:text-cyan transition-colors"
                 >
-                  {/* LinkedIn icon */}
                   <svg
-                    className="w-4 h-4 flex-shrink-0"
+                    className="w-4 h-4 flex-shrink-0 text-slate-500"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -46,18 +48,18 @@ export function CommunitySection() {
           <p className="text-sm font-semibold tracking-widest text-cyan uppercase mb-3">
             Sponsor
           </p>
-          <h3 className="text-2xl font-bold text-white mb-4">
+          <h3 className="text-2xl font-bold text-white mb-2">
             Help Us Grow
           </h3>
-          <p className="text-white/70 mb-6 leading-relaxed">
-            CHI IRL will always be free for the community. Your sponsorship helps us
-            reach more people and keep Chicago&apos;s tech scene thriving.
+          <p className="text-slate-400 leading-relaxed mb-6">
+            CHI IRL is free, always. Your sponsorship helps us reach more people
+            and keep Chicago&apos;s tech scene connected.
           </p>
           <a
             href="https://forms.gle/CwNuyQjCCS2Q9K7L9"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-amber hover:bg-amber/90 text-gray-900 font-semibold text-sm px-6 py-3 rounded-full transition-colors"
+            className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold text-sm px-6 py-3 rounded-full transition-colors"
           >
             Become a Sponsor
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

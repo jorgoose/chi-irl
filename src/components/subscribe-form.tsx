@@ -27,8 +27,8 @@ export function SubscribeForm({ formId, variant = "hero" }: SubscribeFormProps) 
 
   if (submitted) {
     return (
-      <div className={`text-center font-semibold text-lg ${variant === "hero" ? "text-white" : "text-white"}`}>
-        Thank you for subscribing!
+      <div className="text-center text-white font-semibold text-lg py-2">
+        You&apos;re in! Check your inbox Monday.
       </div>
     );
   }
@@ -38,9 +38,9 @@ export function SubscribeForm({ formId, variant = "hero" }: SubscribeFormProps) 
   return (
     <form
       onSubmit={handleSubmit}
-      className={`flex items-center w-full max-w-md rounded-full overflow-hidden ${
+      className={`flex items-center w-full max-w-md rounded-full ${
         isHero
-          ? "bg-white/15 backdrop-blur-sm border border-white/20"
+          ? "bg-white/15 backdrop-blur-sm border border-white/25 shadow-lg shadow-black/10"
           : "bg-white/10 backdrop-blur-sm border border-white/15"
       }`}
     >
@@ -51,14 +51,14 @@ export function SubscribeForm({ formId, variant = "hero" }: SubscribeFormProps) 
         required
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        className="flex-1 h-12 px-5 bg-transparent text-white placeholder:text-white/60 text-sm outline-none"
+        className="flex-1 min-w-0 h-12 px-5 bg-transparent text-white placeholder:text-white/60 text-sm outline-none"
       />
       <button
         type="submit"
-        className={`h-10 px-6 m-1 font-semibold text-sm rounded-full cursor-pointer transition-colors ${
+        className={`h-10 px-6 m-1 font-semibold text-sm rounded-full cursor-pointer transition-colors whitespace-nowrap flex-shrink-0 ${
           isHero
-            ? "bg-white text-cyan-dark hover:bg-white/90"
-            : "bg-cyan text-white hover:bg-cyan-dark"
+            ? "bg-white text-sky-700 hover:bg-sky-50"
+            : "bg-cyan text-white hover:bg-sky-600"
         }`}
       >
         Subscribe
