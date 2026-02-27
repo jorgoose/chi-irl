@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-cyan: #41B6E6;
+  --color-dark: #212121;
+  --color-red: #E4002B;
+  --color-red-hover: #c00024;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #41B6E6;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Elfsight widget overrides */
+.elfsight-app-c52cc391-94cf-4d9b-b5ae-675524e1d722 a,
+.elfsight-app-c52cc391-94cf-4d9b-b5ae-675524e1d722 .eapp-events-calendar-read-more-clone a {
+  display: inline-block;
+  font-size: clamp(12px, 1.2vw, 16px);
+  font-weight: bold;
+  color: white;
+  background: #E4002B;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.elfsight-app-c52cc391-94cf-4d9b-b5ae-675524e1d722 a:hover,
+.elfsight-app-c52cc391-94cf-4d9b-b5ae-675524e1d722 a:focus {
+  color: #E4002B !important;
+  background: black;
+}
+
+.eapps-event-calendar-c52cc391-94cf-4d9b-b5ae-675524e1d722-custom-css-root .eapp-events-calendar-location-text {
+  display: block !important;
+  white-space: normal !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+.eapps-event-calendar-c52cc391-94cf-4d9b-b5ae-675524e1d722-custom-css-root .eapp-events-calendar-grid-item-name {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+.eapps-event-calendar-c52cc391-94cf-4d9b-b5ae-675524e1d722-custom-css-root .eapp-events-calendar-grid-item-component {
+  padding: 0px !important;
+  background: none !important;
+}
+
+@media screen and (max-width: 1023px) {
+  .elfsight-app-c52cc391-94cf-4d9b-b5ae-675524e1d722 a {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+  }
+}
