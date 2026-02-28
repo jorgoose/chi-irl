@@ -29,12 +29,12 @@ const teamMembers = [
 
 export function TeamSection() {
   return (
-    <section id="team" className="py-20 px-4 bg-[#FAFAF8]" data-animate>
+    <section id="team" className="py-14 md:py-20 px-4 bg-[#FAFAF8]" data-animate>
       <div className="max-w-5xl mx-auto">
         <p className="text-sm font-semibold tracking-widest text-cyan uppercase text-center mb-3">
           The Humans Behind It
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 text-center mb-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 text-center mb-4">
           Built by Chicago, for Chicago
         </h2>
         <p className="text-slate-500 text-center mb-12 max-w-lg mx-auto">

@@ -7,8 +7,8 @@ const partners = [
 
 export function CommunitySection() {
   return (
-    <section className="bg-slate-900 py-20 px-4" data-animate>
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+    <section className="bg-slate-900 py-14 md:py-20 px-4" data-animate>
+      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
         {/* Left: Community Partners */}
         <div>
           <p className="text-sm font-semibold tracking-widest text-cyan uppercase mb-3">

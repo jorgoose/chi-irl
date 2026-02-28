@@ -2,7 +2,7 @@ import { SubscribeForm } from "./subscribe-form";
 
 export function Footer() {
   return (
-    <footer className="bg-slate-900 border-t border-white/10 pt-16 pb-8 px-4">
+    <footer className="bg-slate-900 border-t border-white/10 pt-12 md:pt-16 pb-8 px-4">
       <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
           {/* Brand column */}
@@ -61,7 +61,7 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500">
+        <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500 text-center sm:text-left">
           <p>&copy; {new Date().getFullYear()} CHI IRL. All rights reserved.</p>
           <p>
             Created by{" "}
